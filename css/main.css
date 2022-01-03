@@ -5031,6 +5031,12 @@ Created using IcoMoon - icomoon.io
 .gallery .cc-porfolio-image figure p {
   margin: 0; }
 
+.gallery .cc-porfolio-image img {
+  width: 1440px;
+  height: 300px;
+  object-fit: cover;
+}
+
 .gallery figure.cc-effect figcaption::before,
 .gallery figure.cc-effect figcaption::after {
   position: absolute;
