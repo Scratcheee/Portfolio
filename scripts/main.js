@@ -41,3 +41,44 @@ $('a.smooth-scroll')
     }
   }
 });
+
+// Get the modal
+var calcModal = document.getElementById("calc");
+
+// Get the button that opens the modal
+var calcBtn = document.getElementById("calcModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+calcBtn.onclick = function() {
+  calcModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  calcModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    calcModal.style.display = "none";
+  }
+}
+
+var noteModal = document.getElementById("note");
+var noteBtn = document.getElementById("noteModal");
+var span = document.getElementsByClassName("close")[0];
+noteBtn.onclick = function() {
+  noteModal.style.display = "block";
+}
+span.onclick = function() {
+  noteModal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    noteModal.style.display = "none";
+  }
+}
